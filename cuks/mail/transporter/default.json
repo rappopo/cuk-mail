@@ -1,0 +1,7 @@
+{
+  "type": "smtp",
+  "opts": {
+    "host": "localhost",
+    "port": 25
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "srcAttribIdType": "string",
+  "attributes": {
+    "site": {
+      "type": "string",
+      "maxLength": 50,
+      "validator": {
+        "required": true
+      }
+    },
+    "transporter": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string",
+      "validator": {
+        "required": true,
+        "isEmail": {
+          "allow_display_name": true
+        }
+      }
+    },
+    "to": {
+      "type": "text",
+      "validator": {
+        "required": true
+      }
+    },
+    "subject": {
+      "type": "text",
+      "validator": {
+        "required": true
+      }
+    },
+    "plain": {
+      "type": "text"
+    },
+    "formatted": {
+      "type": "text"
+    },
+    "priority": {
+      "type": "integer",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "maxLength": 20,
+      "default": "NEW",
+      "validator": {
+        "required": true
+      }
+    }
+  },
+  "indexes": ["status"],
+  "behavior": {
+    "createdAt": true,
+    "updatedAt": true
+  }
+}

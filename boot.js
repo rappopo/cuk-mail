@@ -2,7 +2,7 @@
 
 module.exports = function (cuk) {
   return new Promise((resolve, reject) => {
-    require('./lib/make_transporter')(cuk)
+    require('./lib/init_transporter')(cuk)
       .then(() => {
         resolve(true)
       })

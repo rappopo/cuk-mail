@@ -1,7 +1,7 @@
 {
   "srcAttribIdType": "string",
   "attributes": {
-    "site": {
+    "site_id": {
       "type": "string",
       "maxLength": 50,
       "validator": {
